@@ -12,7 +12,7 @@ import {
   Link2, Users, Camera, Calendar, Bell, FolderOpen,
   Smartphone, Shield, Zap, CheckCircle2, ArrowRight,
   Wrench, Flame, Building2, Briefcase, Star, ThumbsUp, ThumbsDown,
-  Mic, FileText, MapPin, TrendingUp, Heart, Award
+  FileText, MapPin, TrendingUp, Heart, Award
 } from "lucide-react";
 
 const Index = () => {
