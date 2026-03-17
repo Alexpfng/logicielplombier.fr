@@ -387,19 +387,18 @@ const Index = () => {
         <div className="text-center">
           <h2 className="text-section">Voyez comment Bulbiz fonctionne en situation réelle</h2>
         </div>
-        <div className="mt-10 mx-auto max-w-3xl">
+        <div className="mt-10 mx-auto max-w-sm">
           <div className="rounded-2xl border border-border bg-card p-3 shadow-lg">
-            <div className="aspect-video rounded-xl bg-muted flex items-center justify-center">
-              <div className="text-center">
-                <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-primary/10">
-                  <svg className="h-8 w-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
-                    <path d="M8 5v14l11-7z" />
-                  </svg>
-                </div>
-                <p className="text-muted-foreground font-medium">Démo vidéo Bulbiz</p>
-                <p className="text-sm text-muted-foreground/70 mt-1">Intégrez votre vidéo ici</p>
-              </div>
-            </div>
+            <video
+              className="w-full rounded-xl"
+              controls
+              playsInline
+              preload="metadata"
+              poster=""
+            >
+              <source src="/videos/demo-bulbiz.mov" type="video/mp4" />
+              Votre navigateur ne supporte pas la lecture vidéo.
+            </video>
           </div>
         </div>
         <div className="mt-10 grid gap-4 sm:grid-cols-5">
@@ -428,19 +427,13 @@ const Index = () => {
             Retours réels issus d'échanges terrain et d'avis utilisateurs
           </p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 max-w-2xl mx-auto">
           {[
             {
               name: "Erwan Vignol",
               source: "Avis Google",
               text: "Équipe au top, réactive, service très correct et en constante amélioration.",
               rating: 5,
-            },
-            {
-              name: "Nisrine Benabdelkader",
-              source: "LinkedIn",
-              text: "Retour très positif sur l'approche terrain et la simplicité de la solution pour les artisans.",
-              rating: null,
             },
             {
               name: "Yannis Benabdelkader",
