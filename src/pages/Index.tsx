@@ -753,8 +753,8 @@ const Index = () => {
                 a: "Bulbiz vous permet de planifier vos interventions simplement, directement depuis l'application, avec toutes les informations client à portée de main.",
               },
               {
-                q: "Comment éviter les oublis de devis ?",
-                a: "Avec Bulbiz, chaque demande est structurée et suivie. Vous êtes relancé automatiquement, et rien ne passe entre les mailles du filet.",
+                q: "Comment l'IA de Bulbiz aide les plombiers ?",
+                a: "L'IA de Bulbiz analyse les photos et vidéos envoyées par vos clients pour identifier les problèmes et générer automatiquement la liste de matériel nécessaire. Vous arrivez préparé sur chaque chantier.",
               },
               {
                 q: "Comment être plus réactif que ses concurrents ?",

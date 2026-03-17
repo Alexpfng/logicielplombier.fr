@@ -82,7 +82,7 @@ const LogicielPlombier = () => (
             "Lien client unique partageable partout",
             "Centralisation automatique des demandes",
             "Photos et vidéos rattachées au bon dossier",
-            "IA métier pour le devis et la liste matériel",
+            "IA qui analyse photos/vidéos et génère la liste matériel",
             "Application mobile first",
             "Test gratuit sans engagement",
           ].map((f, i) => (
