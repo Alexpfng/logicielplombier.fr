@@ -506,7 +506,6 @@ const Index = () => {
           <Card className="border-amber-500/20">
             <CardContent className="p-6">
               <div className="flex items-center gap-2 text-amber-600 font-semibold mb-4">
-                <ThumbsDown className="h-5 w-5" />
                 À garder en tête
               </div>
               <ul className="space-y-3">
