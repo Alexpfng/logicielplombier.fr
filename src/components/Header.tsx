@@ -32,9 +32,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 border-b border-border/50 bg-background/80 backdrop-blur-xl">
       <div className="container-tight flex h-16 items-center justify-between md:h-18">
         <Link to="/" className="flex items-center gap-2 font-bold text-lg text-foreground">
-          <div className="flex h-8 w-8 items-center justify-center rounded-lg bg-primary">
-            <span className="text-sm font-bold text-primary-foreground">LP</span>
-          </div>
+          <img src={logo} alt="logiciel-plombier.fr" className="h-8 w-8 rounded-lg" />
           <span className="hidden sm:inline">logiciel-plombier.fr</span>
         </Link>
 
