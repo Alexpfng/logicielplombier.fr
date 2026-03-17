@@ -407,7 +407,7 @@ const Index = () => {
             "Réception de la demande",
             "Dossier structuré",
             "Suivi plus clair",
-            "Devis facilité",
+            "Analyse photo & vidéo",
             "RDV mieux organisés",
           ].map((step, i) => (
             <div key={i} className="flex items-center gap-2 rounded-lg bg-card p-3 text-center text-sm font-medium shadow-sm">
