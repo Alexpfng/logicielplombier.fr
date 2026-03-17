@@ -172,7 +172,7 @@ const Index = () => {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            { icon: FileText, title: "Un devis non relancé", desc: "Un client qui attend votre réponse… et qui finit par appeler un autre artisan." },
+            { icon: FileText, title: "Une réponse trop tardive", desc: "Un client qui attend votre retour… et qui finit par appeler un autre artisan." },
             { icon: FileX, title: "Une demande oubliée", desc: "Un message perdu dans le flot des appels et des SMS." },
             { icon: TrendingUp, title: "Des chantiers perdus", desc: "Du chiffre d'affaires invisible qui part chez vos concurrents." },
           ].map((item, i) => (
