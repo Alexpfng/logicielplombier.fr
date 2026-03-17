@@ -12,7 +12,7 @@ import {
   Link2, Users, Camera, Calendar, Bell, FolderOpen,
   Smartphone, Shield, Zap, CheckCircle2, ArrowRight,
   Wrench, Flame, Building2, Briefcase, Star, ThumbsUp, ThumbsDown,
-  Mic, FileText, MapPin, TrendingUp, Heart, Award
+  FileText, MapPin, TrendingUp, Heart, Award
 } from "lucide-react";
 
 const Index = () => {
@@ -91,7 +91,7 @@ const Index = () => {
                     {[
                       { icon: Phone, label: "Appel entrant — M. Dupont", color: "bg-primary/10 text-primary" },
                       { icon: MessageCircle, label: "WhatsApp — Fuite cuisine", color: "bg-green-100 text-green-700" },
-                      { icon: Globe, label: "Google — Demande devis", color: "bg-amber-100 text-amber-700" },
+                      { icon: Globe, label: "Google — Nouvelle demande", color: "bg-amber-100 text-amber-700" },
                       { icon: MessageSquare, label: "SMS — Chaudière en panne", color: "bg-blue-100 text-blue-700" },
                     ].map((item, i) => (
                       <div key={i} className={`flex items-center gap-3 rounded-xl p-3 ${item.color}`}>
@@ -172,7 +172,7 @@ const Index = () => {
         </div>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
           {[
-            { icon: FileText, title: "Un devis non relancé", desc: "Un client qui attend votre réponse… et qui finit par appeler un autre artisan." },
+            { icon: FileText, title: "Une réponse trop tardive", desc: "Un client qui attend votre retour… et qui finit par appeler un autre artisan." },
             { icon: FileX, title: "Une demande oubliée", desc: "Un message perdu dans le flot des appels et des SMS." },
             { icon: TrendingUp, title: "Des chantiers perdus", desc: "Du chiffre d'affaires invisible qui part chez vos concurrents." },
           ].map((item, i) => (
@@ -261,15 +261,14 @@ const Index = () => {
             <span className="text-primary">Une IA pensée pour le BTP.</span>
           </h2>
           <p className="mt-6 text-lg text-primary-foreground/70 leading-relaxed">
-            Vous faites un devis. Vous dictez une note vocale.
-            Vous ajoutez des infos chantier.
-            Bulbiz comprend et génère automatiquement la liste de matériel.
+            Vos clients envoient des photos et vidéos de leur problème.
+            Bulbiz analyse automatiquement les visuels et génère la liste de matériel nécessaire.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              { icon: Mic, label: "Notes vocales" },
-              { icon: FileText, label: "Devis assisté" },
+              { icon: Camera, label: "Analyse photo & vidéo" },
               { icon: Wrench, label: "Liste matériel auto" },
+              { icon: Zap, label: "Envoi automatique" },
             ].map((a, i) => (
               <div key={i} className="flex flex-col items-center gap-3 rounded-xl border border-primary-foreground/10 p-6">
                 <a.icon className="h-8 w-8 text-primary" />
@@ -408,7 +407,7 @@ const Index = () => {
             "Réception de la demande",
             "Dossier structuré",
             "Suivi plus clair",
-            "Devis facilité",
+            "Analyse photo & vidéo",
             "RDV mieux organisés",
           ].map((step, i) => (
             <div key={i} className="flex items-center gap-2 rounded-lg bg-card p-3 text-center text-sm font-medium shadow-sm">
@@ -547,7 +546,7 @@ const Index = () => {
             { icon: FileText, title: "Ajout d'informations", desc: "Le client ajoute tout ce qu'il faut" },
             { icon: Camera, title: "Photos et vidéos", desc: "Images rattachées au bon dossier client" },
             { icon: Zap, title: "Structuration automatique", desc: "Dossier créé et organisé tout seul" },
-            { icon: FileText, title: "Aide au devis", desc: "Générez vos devis plus rapidement" },
+            { icon: Camera, title: "Analyse photo & vidéo", desc: "L'IA analyse les visuels et génère la liste matériel" },
             { icon: Calendar, title: "Gestion rendez-vous", desc: "Planifiez facilement vos interventions" },
             { icon: Bell, title: "Relances", desc: "Ne laissez plus un client sans réponse" },
             { icon: Shield, title: "Suivi complet", desc: "Visualisez l'avancement de chaque dossier" },
@@ -582,12 +581,12 @@ const Index = () => {
               ],
             },
             {
-              title: "Un devis à envoyer vite",
+              title: "Un client envoie des photos",
               steps: [
-                "Un client veut un devis pour une fuite.",
-                "Les infos sont déjà structurées dans Bulbiz.",
-                "Vous générez le devis en quelques clics.",
-                "Le client reçoit votre réponse plus vite que vos concurrents.",
+                "Un client a une fuite. Il envoie des photos via votre lien Bulbiz.",
+                "L'IA analyse les visuels et identifie le problème.",
+                "La liste de matériel est générée automatiquement.",
+                "Vous arrivez préparé, avec tout ce qu'il faut.",
               ],
             },
             {
@@ -754,8 +753,8 @@ const Index = () => {
                 a: "Bulbiz vous permet de planifier vos interventions simplement, directement depuis l'application, avec toutes les informations client à portée de main.",
               },
               {
-                q: "Comment éviter les oublis de devis ?",
-                a: "Avec Bulbiz, chaque demande est structurée et suivie. Vous êtes relancé automatiquement, et rien ne passe entre les mailles du filet.",
+                q: "Comment l'IA de Bulbiz aide les plombiers ?",
+                a: "L'IA de Bulbiz analyse les photos et vidéos envoyées par vos clients pour identifier les problèmes et générer automatiquement la liste de matériel nécessaire. Vous arrivez préparé sur chaque chantier.",
               },
               {
                 q: "Comment être plus réactif que ses concurrents ?",

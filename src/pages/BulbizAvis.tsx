@@ -52,7 +52,7 @@ const BulbizAvis = () => (
             { title: "Lien client unique", desc: "Le principe est malin : un seul lien à partager partout. Le client remplit sa demande, ajoute des photos, et tout est structuré automatiquement. Simple et efficace." },
             { title: "Centralisation automatique", desc: "Toutes les demandes arrivent au même endroit. Plus besoin de fouiller dans ses SMS, emails ou notes. C'est le cœur de la proposition de valeur." },
             { title: "Organisation des dossiers", desc: "Chaque demande devient un dossier structuré avec les infos client, photos et détails. La structuration automatique fait gagner un temps précieux." },
-            { title: "IA métier intégrée", desc: "L'IA de Bulbiz est orientée BTP : elle comprend les notes vocales, aide au devis et génère des listes de matériel. Concrète et utile, pas gadget." },
+            { title: "IA métier intégrée", desc: "L'IA de Bulbiz analyse les photos et vidéos envoyées par les clients pour générer automatiquement des listes de matériel. Concrète et utile, pas gadget." },
             { title: "Usage mobile", desc: "L'application est clairement pensée mobile first. Sur chantier, dans le camion : l'expérience est fluide et rapide." },
           ].map((f, i) => (
             <div key={i}>
