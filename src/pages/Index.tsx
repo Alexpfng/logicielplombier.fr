@@ -427,19 +427,13 @@ const Index = () => {
             Retours réels issus d'échanges terrain et d'avis utilisateurs
           </p>
         </div>
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-10 grid gap-6 md:grid-cols-2 max-w-2xl mx-auto">
           {[
             {
               name: "Erwan Vignol",
               source: "Avis Google",
               text: "Équipe au top, réactive, service très correct et en constante amélioration.",
               rating: 5,
-            },
-            {
-              name: "Nisrine Benabdelkader",
-              source: "LinkedIn",
-              text: "Retour très positif sur l'approche terrain et la simplicité de la solution pour les artisans.",
-              rating: null,
             },
             {
               name: "Yannis Benabdelkader",
