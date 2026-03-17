@@ -261,15 +261,14 @@ const Index = () => {
             <span className="text-primary">Une IA pensée pour le BTP.</span>
           </h2>
           <p className="mt-6 text-lg text-primary-foreground/70 leading-relaxed">
-            Vous faites un devis. Vous dictez une note vocale.
-            Vous ajoutez des infos chantier.
-            Bulbiz comprend et génère automatiquement la liste de matériel.
+            Vos clients envoient des photos et vidéos de leur problème.
+            Bulbiz analyse automatiquement les visuels et génère la liste de matériel nécessaire.
           </p>
           <div className="mt-8 grid gap-4 sm:grid-cols-3">
             {[
-              { icon: Mic, label: "Notes vocales" },
-              { icon: FileText, label: "Devis assisté" },
+              { icon: Camera, label: "Analyse photo & vidéo" },
               { icon: Wrench, label: "Liste matériel auto" },
+              { icon: Zap, label: "Envoi automatique" },
             ].map((a, i) => (
               <div key={i} className="flex flex-col items-center gap-3 rounded-xl border border-primary-foreground/10 p-6">
                 <a.icon className="h-8 w-8 text-primary" />
