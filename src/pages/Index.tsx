@@ -546,7 +546,7 @@ const Index = () => {
             { icon: FileText, title: "Ajout d'informations", desc: "Le client ajoute tout ce qu'il faut" },
             { icon: Camera, title: "Photos et vidéos", desc: "Images rattachées au bon dossier client" },
             { icon: Zap, title: "Structuration automatique", desc: "Dossier créé et organisé tout seul" },
-            { icon: FileText, title: "Aide au devis", desc: "Générez vos devis plus rapidement" },
+            { icon: Camera, title: "Analyse photo & vidéo", desc: "L'IA analyse les visuels et génère la liste matériel" },
             { icon: Calendar, title: "Gestion rendez-vous", desc: "Planifiez facilement vos interventions" },
             { icon: Bell, title: "Relances", desc: "Ne laissez plus un client sans réponse" },
             { icon: Shield, title: "Suivi complet", desc: "Visualisez l'avancement de chaque dossier" },
