@@ -1,11 +1,15 @@
 import { Link } from "react-router-dom";
+import logo from "@/assets/logo.png";
 
 const Footer = () => (
   <footer className="border-t border-border bg-foreground text-primary-foreground">
     <div className="container-tight py-16">
       <div className="grid gap-10 md:grid-cols-4">
         <div className="md:col-span-1">
-          <Link to="/" className="text-lg font-bold">logiciel-plombier.fr</Link>
+          <Link to="/" className="flex items-center gap-2 text-lg font-bold">
+            <img src={logo} alt="logiciel-plombier.fr" className="h-8 w-8 rounded-lg" />
+            logiciel-plombier.fr
+          </Link>
           <p className="mt-3 text-sm text-primary-foreground/70 leading-relaxed">
             Le site de référence pour les plombiers et chauffagistes qui veulent mieux organiser leurs demandes clients.
           </p>
