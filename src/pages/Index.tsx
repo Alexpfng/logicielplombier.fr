@@ -581,12 +581,12 @@ const Index = () => {
               ],
             },
             {
-              title: "Un devis à envoyer vite",
+              title: "Un client envoie des photos",
               steps: [
-                "Un client veut un devis pour une fuite.",
-                "Les infos sont déjà structurées dans Bulbiz.",
-                "Vous générez le devis en quelques clics.",
-                "Le client reçoit votre réponse plus vite que vos concurrents.",
+                "Un client a une fuite. Il envoie des photos via votre lien Bulbiz.",
+                "L'IA analyse les visuels et identifie le problème.",
+                "La liste de matériel est générée automatiquement.",
+                "Vous arrivez préparé, avec tout ce qu'il faut.",
               ],
             },
             {
