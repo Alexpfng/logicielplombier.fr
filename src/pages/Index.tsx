@@ -91,7 +91,7 @@ const Index = () => {
                     {[
                       { icon: Phone, label: "Appel entrant — M. Dupont", color: "bg-primary/10 text-primary" },
                       { icon: MessageCircle, label: "WhatsApp — Fuite cuisine", color: "bg-green-100 text-green-700" },
-                      { icon: Globe, label: "Google — Demande devis", color: "bg-amber-100 text-amber-700" },
+                      { icon: Globe, label: "Google — Nouvelle demande", color: "bg-amber-100 text-amber-700" },
                       { icon: MessageSquare, label: "SMS — Chaudière en panne", color: "bg-blue-100 text-blue-700" },
                     ].map((item, i) => (
                       <div key={i} className={`flex items-center gap-3 rounded-xl p-3 ${item.color}`}>
