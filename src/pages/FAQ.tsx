@@ -1,8 +1,9 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import SectionWrapper from "@/components/SectionWrapper";
+import Seo from "@/components/Seo";
+import { breadcrumbJsonLd, faqJsonLd } from "@/lib/seo";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
 
@@ -28,11 +29,18 @@ const faqItems = [
 
 const FAQ = () => (
   <>
-    <Helmet>
-      <title>FAQ — Questions fréquentes sur les logiciels pour plombier</title>
-      <meta name="description" content="Toutes les réponses à vos questions sur les logiciels pour plombier, la gestion des demandes clients, et Bulbiz." />
-      <link rel="canonical" href="https://logiciel-plombier.fr/faq" />
-    </Helmet>
+    <Seo
+      title="FAQ — Questions fréquentes sur les logiciels pour plombier"
+      description="Toutes les réponses à vos questions sur les logiciels pour plombier, la gestion des demandes clients, et Bulbiz."
+      path="/faq"
+      jsonLd={[
+        faqJsonLd(faqItems),
+        breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "FAQ", path: "/faq" },
+        ]),
+      ]}
+    />
     <Header />
 
     <SectionWrapper>
@@ -66,21 +74,6 @@ const FAQ = () => (
 
     <CTASection />
     <Footer />
-
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{
-        __html: JSON.stringify({
-          "@context": "https://schema.org",
-          "@type": "FAQPage",
-          mainEntity: faqItems.map((faq) => ({
-            "@type": "Question",
-            name: faq.q,
-            acceptedAnswer: { "@type": "Answer", text: faq.a },
-          })),
-        }),
-      }}
-    />
   </>
 );
 

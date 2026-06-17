@@ -1,19 +1,33 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import SectionWrapper from "@/components/SectionWrapper";
+import Seo from "@/components/Seo";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { Smartphone, MapPin, Clock, Wrench, CheckCircle2 } from "lucide-react";
 
+const PATH = "/application-plombier";
+const TITLE = "Application Plombier — L'outil mobile pour gérer vos clients sur le terrain";
+const DESCRIPTION =
+  "Découvrez l'application mobile idéale pour les plombiers. Bulbiz centralise vos demandes clients depuis votre téléphone. Sur chantier, dans le camion, partout.";
+
 const ApplicationPlombier = () => (
   <>
-    <Helmet>
-      <title>Application Plombier — L'outil mobile pour gérer vos clients sur le terrain</title>
-      <meta name="description" content="Découvrez l'application mobile idéale pour les plombiers. Bulbiz centralise vos demandes clients depuis votre téléphone. Sur chantier, dans le camion, partout." />
-      <link rel="canonical" href="https://logiciel-plombier.fr/application-plombier" />
-    </Helmet>
+    <Seo
+      title={TITLE}
+      description={DESCRIPTION}
+      path={PATH}
+      type="article"
+      jsonLd={[
+        articleJsonLd({ title: TITLE, description: DESCRIPTION, path: PATH }),
+        breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Application plombier", path: PATH },
+        ]),
+      ]}
+    />
     <Header />
 
     <SectionWrapper>

@@ -3,27 +3,50 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Title par défaut (repli sans JS). Description, canonical, Open Graph et Twitter
+         sont gérés par page via le composant Seo (react-helmet-async). -->
     <title>Logiciel Plombier — Centralisez vos demandes clients | Bulbiz</title>
-    <meta name="description" content="Découvrez le meilleur logiciel pour plombiers et chauffagistes. Bulbiz centralise automatiquement toutes vos demandes clients. Simple, mobile, efficace. Testez gratuitement.">
     <meta name="author" content="logiciel-plombier.fr" />
-    <link rel="canonical" href="https://logiciel-plombier.fr/" />
 
-    
-    
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://logiciel-plombier.fr/" />
-    <meta property="og:locale" content="fr_FR" />
-    <meta property="og:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/wmL1M0jMH4acyVjq1dmkiHafCIz1/social-images/social-1773746917496-Capture_d’écran_2026-03-17_à_12.27.30.webp">
-
-    <meta name="twitter:card" content="summary_large_image" />
-    
-    
-    <meta name="twitter:image" content="https://storage.googleapis.com/gpt-engineer-file-uploads/wmL1M0jMH4acyVjq1dmkiHafCIz1/social-images/social-1773746917496-Capture_d’écran_2026-03-17_à_12.27.30.webp">
-    <meta property="og:title" content="Logiciel Plombier — Centralisez vos demandes clients | Bulbiz">
-  <meta name="twitter:title" content="Logiciel Plombier — Centralisez vos demandes clients | Bulbiz">
-  <meta property="og:description" content="Découvrez le meilleur logiciel pour plombiers et chauffagistes. Bulbiz centralise automatiquement toutes vos demandes clients. Simple, mobile, efficace. Testez gratuitement.">
-  <meta name="twitter:description" content="Découvrez le meilleur logiciel pour plombiers et chauffagistes. Bulbiz centralise automatiquement toutes vos demandes clients. Simple, mobile, efficace. Testez gratuitement.">
-</head>
+    <!-- Données structurées globales (présentes dans le HTML brut, indépendantes du JS) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "logiciel-plombier.fr",
+      "url": "https://logiciel-plombier.fr/",
+      "description": "Guide indépendant des logiciels et applications pour plombiers et chauffagistes.",
+      "logo": "https://logiciel-plombier.fr/favicon.ico"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "logiciel-plombier.fr",
+      "url": "https://logiciel-plombier.fr/",
+      "inLanguage": "fr-FR"
+    }
+    </script>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Bulbiz",
+      "applicationCategory": "BusinessApplication",
+      "operatingSystem": "Web, iOS, Android",
+      "url": "https://bulbiz.io",
+      "description": "Assistant métier pour artisans du BTP (plombiers, chauffagistes) qui centralise les demandes clients (téléphone, SMS, WhatsApp, Google), structure automatiquement les dossiers et aide au suivi des interventions et devis.",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "EUR",
+        "description": "Test gratuit, sans engagement"
+      }
+    }
+    </script>
+  </head>
 
   <body>
     <div id="root"></div>

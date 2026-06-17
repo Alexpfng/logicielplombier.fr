@@ -12,3 +12,21 @@ Allow: /
 
 User-agent: *
 Allow: /
+
+# Moteurs génératifs / IA (GEO) — autorisés à indexer
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+Sitemap: https://logiciel-plombier.fr/sitemap.xml

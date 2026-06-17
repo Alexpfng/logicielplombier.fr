@@ -1,19 +1,33 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import SectionWrapper from "@/components/SectionWrapper";
+import Seo from "@/components/Seo";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Star, CheckCircle2, ThumbsUp, ThumbsDown } from "lucide-react";
 import { Link } from "react-router-dom";
 
+const PATH = "/bulbiz-avis";
+const TITLE = "Avis Bulbiz — Test complet pour plombiers et artisans du BTP";
+const DESCRIPTION =
+  "Notre avis complet sur Bulbiz : le logiciel de centralisation des demandes clients pour plombiers et chauffagistes. Test, fonctionnalités, points forts et limites.";
+
 const BulbizAvis = () => (
   <>
-    <Helmet>
-      <title>Avis Bulbiz 2025 — Test complet pour plombiers et artisans</title>
-      <meta name="description" content="Notre avis complet sur Bulbiz : le logiciel de centralisation des demandes clients pour plombiers et chauffagistes. Test, fonctionnalités, points forts et limites." />
-      <link rel="canonical" href="https://logiciel-plombier.fr/bulbiz-avis" />
-    </Helmet>
+    <Seo
+      title={TITLE}
+      description={DESCRIPTION}
+      path={PATH}
+      type="article"
+      jsonLd={[
+        articleJsonLd({ title: TITLE, description: DESCRIPTION, path: PATH }),
+        breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Avis Bulbiz", path: PATH },
+        ]),
+      ]}
+    />
     <Header />
 
     <SectionWrapper>

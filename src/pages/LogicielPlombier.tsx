@@ -1,19 +1,33 @@
-import { Helmet } from "react-helmet-async";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import CTASection from "@/components/CTASection";
 import SectionWrapper from "@/components/SectionWrapper";
+import Seo from "@/components/Seo";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "react-router-dom";
 import { FileText, Smartphone, Zap, Clock, FolderOpen, CheckCircle2 } from "lucide-react";
 
+const PATH = "/logiciel-plombier";
+const TITLE = "Logiciel Plombier — Le meilleur outil pour gérer vos demandes clients";
+const DESCRIPTION =
+  "Comparatif des logiciels pour plombier. Découvrez pourquoi Bulbiz est l'outil idéal pour centraliser vos demandes clients et mieux organiser votre quotidien terrain.";
+
 const LogicielPlombier = () => (
   <>
-    <Helmet>
-      <title>Logiciel Plombier — Le meilleur outil pour gérer vos demandes clients</title>
-      <meta name="description" content="Comparatif des logiciels pour plombier. Découvrez pourquoi Bulbiz est l'outil idéal pour centraliser vos demandes clients et mieux organiser votre quotidien terrain." />
-      <link rel="canonical" href="https://logiciel-plombier.fr/logiciel-plombier" />
-    </Helmet>
+    <Seo
+      title={TITLE}
+      description={DESCRIPTION}
+      path={PATH}
+      type="article"
+      jsonLd={[
+        articleJsonLd({ title: TITLE, description: DESCRIPTION, path: PATH }),
+        breadcrumbJsonLd([
+          { name: "Accueil", path: "/" },
+          { name: "Logiciel plombier", path: PATH },
+        ]),
+      ]}
+    />
     <Header />
 
     <SectionWrapper>
