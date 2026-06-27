@@ -29,4 +29,23 @@ Allow: /
 User-agent: ClaudeBot
 Allow: /
 
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: Meta-ExternalAgent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+# Aperçu structuré pour les IA (GEO) : https://logiciel-plombier.fr/llms.txt
 Sitemap: https://logiciel-plombier.fr/sitemap.xml
